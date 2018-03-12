@@ -7,11 +7,12 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "eslint": "eslint src/**/*.js public/js/**/*.js",
-    "precommit": "npm run eslint"
+    "precommit": "npm run eslint",
+    "postinstall": "node_modules/.bin/bower install"
   },
   "engines": {
-    "node": "6.1.x",
-    "npm": "3.8.x"
+    "node": "8.6.x",
+    "npm": "5.3.x"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.3.5",
     "body-parser": "^1.15.0",
+    "bower": "^1.8.0",
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "jsonwebtoken": "^7.0.0",
